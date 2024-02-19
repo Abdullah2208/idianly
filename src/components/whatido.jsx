@@ -27,13 +27,13 @@ function WhatIDO () {
         <div className='whatido'>
             <div>
                 <p>What i do?</p>
-                <img src={arrow}/>
+                <img src={arrow} alt='arrow'/>
             </div>
             <div className='card-group'>
                 {arr.map(card => {
                     return(
                         <div className='card'>
-                            <img src={card.icon}/>
+                            <img src={card.icon} alt='decoration'/>
                             <h3>{card.title}</h3>
                             <p>{card.tag}</p>
                         </div>
