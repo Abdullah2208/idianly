@@ -1,0 +1,26 @@
+@font-face {
+    font-family: Handlee;
+    src: url('./assets/fonts/Handlee/Handlee-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: Inter;
+    src: url('./assets/fonts/Inter/Inter-VariableFont_slnt,wght.ttf') format('truetype');
+}
+
+
+:root {
+    --text-color: #0C0C0C;
+    --orange-color: #FFE68C;
+    --blue-color: #9DDCFF;
+    --pink-color: #FFC9F0;
+    --main-font: 'Handlee';
+    --secondary-font: 'Inter'
+}
+body {
+    background-image: url('./assets/images/bg patterns.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: var(--text-color);
+    font-family: var(--main-font);
+    overflow-x: hidden;
+}
