@@ -305,20 +305,20 @@ header nav ul div li {
   }
   .card:nth-of-type(1) p {
     background-color: var(--blue-color);
-    top: -11em;
-    left: 12em;
+    top: -14em;
+    left: -1em;
     rotate: 4deg;
   }
   .card:nth-of-type(2) p {
     background-color: var(--pink-color);
-    top: -12em;
-    left: 13em;
+    top: -14em;
+    left: 5em;
     rotate: -4deg;
   }
   .card:nth-of-type(3) p {
     background-color: var(--orange-color);
-    top: -11em;
-    left: 12em;
+    top: -13em;
+    left: -1em;
     rotate: 4deg;
   }
 }
