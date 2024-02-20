@@ -5,6 +5,7 @@ import Landing from './components/landing'
 import WhatIDO from './components/whatido'
 import Featured from './components/featured'
 import Experience from './components/experience'
+import Contact from './components/contact'
 
 function App() {
 
@@ -23,6 +24,9 @@ function App() {
         </section>
         <section>
           <Experience />
+        </section>
+        <section>
+          <Contact />
         </section>
       </main>
 

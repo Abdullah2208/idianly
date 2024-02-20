@@ -350,8 +350,84 @@ font-family: var(--secondary-font);
   color: gray
 }
 
-
-
+.contact {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 8em
+}
+.contact > div:nth-child(1) p:nth-child(1) {
+  background-color: var(--pink-color);
+  width: fit-content;
+  font-size: 1.4em;
+  font-weight: 800;
+}
+.contact > div:nth-child(1) img {
+  rotate: 240deg;
+  margin: 10px 0;
+  margin-left: 3em;
+}
+form div {
+  margin: 2em 0;
+}
+label {
+  font-size: 1.2em;
+  border-left: 2px solid;
+  font-weight: 600;
+}
+input {
+  padding-left: 10px;
+  font-size: 1.2em;
+  border: 0;
+  border-bottom: 2px solid;
+  font-family: var(--main-font);
+  width: 80%
+}
+input::placeholder {
+  color: transparent;
+}
+input:focus {
+  outline: none;
+}
+form div:nth-child(1) label {
+  background-color: var(--orange-color);
+}
+form div:nth-child(2) label {
+  background-color: var(--blue-color);
+}
+form div:nth-child(3) label {
+  background-color: var(--pink-color);
+  display: block;
+  width: fit-content
+}
+form div:nth-child(4) {
+  display: flex;
+  justify-content: flex-end;
+}
+form div:nth-child(4) button {
+  background-color: var(--text-color);
+  color: white;
+  font-size: 1.1em;
+  padding: 0.7em 1em;
+  border-radius: 0;
+  border: 2px solid var(--text-color);
+  rotate: 2deg;
+  transition: 0.1s ease
+}
+form div:nth-child(4) button:active {
+  background-color: white;
+  color: var(--text-color);
+}
+textarea {
+  resize: none;
+  padding-left: 10px;
+  font-size: 1em;
+  border: 0;
+  border-top: 2px solid;
+  border-bottom: 2px solid;
+  font-family: var(--main-font);
+}
 
 
 
@@ -478,6 +554,22 @@ font-family: var(--secondary-font);
   .exp-group > div > div p:nth-child(3) {
     font-size: 0.7em;
   }
+  .contact {
+    grid-template-columns: 1fr;
+    margin-top: 2em;
+  }
+  .contact > div img{
+    margin: 2px 0
+  }
+  input {
+    padding-left: 10px;
+    font-size: 1em;
+    width: 50vw
+  }
+  textarea {
+    font-size: 1em;
+    width: 90%
+  }
 }
 @media (max-width: 499px) and (min-width: 300px) {
   header {
@@ -559,7 +651,8 @@ font-family: var(--secondary-font);
   .exp {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 1em
+    gap: 1em;
+    margin-top: 4em;
   }
   .exp > div:nth-child(1) img {
     margin: 10px 0;
@@ -588,5 +681,21 @@ font-family: var(--secondary-font);
   }
   .exp-group > div > div p:nth-child(3) {
     font-size: 0.7em;
+  }
+  .contact {
+    grid-template-columns: 1fr;
+    margin-top: 2em;
+  }
+  .contact > div img{
+    margin: 2px 0
+  }
+  input {
+    padding-left: 10px;
+    font-size: 1em;
+    width: 50vw
+  }
+  textarea {
+    font-size: 1em;
+    width: 90%
   }
 }
