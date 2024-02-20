@@ -4,6 +4,7 @@ import Header from './components/header'
 import Landing from './components/landing'
 import WhatIDO from './components/whatido'
 import Featured from './components/featured'
+import Experience from './components/experience'
 
 function App() {
 
@@ -19,6 +20,9 @@ function App() {
         </section>
         <section>
           <Featured />
+        </section>
+        <section>
+          <Experience />
         </section>
       </main>
 

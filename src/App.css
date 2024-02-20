@@ -50,6 +50,9 @@ header nav ul li {
 header nav ul li:hover {
   text-decoration: underline var(--text-color);
 }
+header nav ul li::selection {
+  background-color: transparent;
+}
 header nav ul div {
   height: 5px;
   background-color: var(--pink-color);
@@ -273,9 +276,79 @@ font-family: var(--secondary-font);
   border: 2px solid #4ED543;
 }
 
-
-
-
+.exp{ 
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 7em;
+  gap: 2em
+}
+.exp > div:nth-child(1) p:nth-child(1){
+  background-color: var(--pink-color);
+  font-size: 1.4em;
+  font-weight: 800;
+  width: fit-content;
+}
+.exp > div:nth-child(1) img {
+  rotate: 240deg;
+  margin: 20px 0;
+  margin-left: 4em;
+}
+.exp > div:nth-child(1) p:nth-child(3){
+  font-family: var(--secondary-font);
+}
+.exp-group {
+  border: 2px solid var(--text-color);
+}
+.exp-group > div {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 5fr;
+  gap: 2.5em;
+  height: fit-content;
+  padding:  2em 4em;
+}
+.exp-group > div > p {
+  font-weight: 800;
+  font-size: 4em;
+  text-align: center;
+  border: 2px solid;
+  border-radius: 5px;
+  width: 100%;
+  margin: 0
+}
+.exp-group > div:nth-child(1) > p {
+  background-color: var(--orange-color);
+  border-color: #E5C141;
+}
+.exp-group > div:nth-child(2) > p {
+  background-color: var(--blue-color);
+  border-color: #5AB5E8;
+}
+.exp-group > div:nth-child(3) > p {
+  background-color: var(--pink-color);
+  border-color: #F072CD;
+}
+.exp-group > div > div {
+  display: grid;
+  align-items: center;
+  height: fit-content
+}
+.exp-group > div > div p {
+  margin: 0;
+  font-family: var(--secondary-font);
+}
+.exp-group > div > div p:nth-child(1) {
+  font-size: 1.2em;
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+.exp-group > div > div p:nth-child(3) {
+  margin-top: 5px;
+  font-size: 0.8em;
+  color: gray
+}
 
 
 

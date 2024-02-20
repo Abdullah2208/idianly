@@ -50,7 +50,7 @@ function Featured () {
             <div className='featured-main'>
                 {arr.map(catalogue => {
                     return(
-                        <div>
+                        <div key={catalogue.img}>
                             <img src={catalogue.img} alt='Image same as title'/>
                             <p>{catalogue.title}</p>
                             <div className='strip'>

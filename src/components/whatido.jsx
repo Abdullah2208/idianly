@@ -32,7 +32,7 @@ function WhatIDO () {
             <div className='card-group'>
                 {arr.map(card => {
                     return(
-                        <div className='card'>
+                        <div className='card' key={card.icon}>
                             <img src={card.icon} alt='decoration'/>
                             <h3>{card.title}</h3>
                             <p>{card.tag}</p>
