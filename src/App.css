@@ -597,6 +597,13 @@ textarea {
     font-size: 1em;
     width: 90%
   }
+  .footer {
+    grid-template-columns: 1fr;
+    padding: 2em 2em;
+  }
+  .footer div:nth-child(2) p {
+    font-size: 1.2em;
+  }
 }
 @media (max-width: 499px) and (min-width: 300px) {
   header {
@@ -724,5 +731,12 @@ textarea {
   textarea {
     font-size: 1em;
     width: 90%
+  }
+  .footer {
+    grid-template-columns: 1fr;
+    padding: 2em 2em;
+  }
+  .footer div:nth-child(2) p {
+    font-size: 1.2em;
   }
 }
