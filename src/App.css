@@ -388,6 +388,10 @@ font-family: var(--secondary-font);
     left: 8em;
     rotate: 4deg;
   }
+  .exp {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
 }
 @media (max-width: 699px) and (min-width: 500px){
   header {
@@ -440,6 +444,39 @@ font-family: var(--secondary-font);
     justify-self: flex-start;
     margin-left: 2em;
     width: 4em
+  }
+  .exp {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1em
+  }
+  .exp > div:nth-child(1) img {
+    margin: 10px 0;
+    margin-left: 3em;
+  }
+  .exp > div:nth-child(1) p:nth-child(3) {
+    width: 60%
+  }
+  .exp-group {
+    border: 0;
+  }
+  .exp-group > div {
+    padding: 2em 0;
+    grid-template-columns: 1fr 2fr;
+    gap: 1.5em
+  }
+  .exp-group > div > p {
+    font-size: 3em;
+    height: 100%;
+  }
+  .exp-group > div > div p:nth-child(1) {
+    font-size: 1em;
+  }
+  .exp-group > div > div p:nth-child(2) {
+    font-size: 0.9em;
+  }
+  .exp-group > div > div p:nth-child(3) {
+    font-size: 0.7em;
   }
 }
 @media (max-width: 499px) and (min-width: 300px) {
@@ -518,5 +555,38 @@ font-family: var(--secondary-font);
     justify-self: flex-start;
     margin-left: 3em;
     width: 4em
+  }
+  .exp {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1em
+  }
+  .exp > div:nth-child(1) img {
+    margin: 10px 0;
+    margin-left: 3em;
+  }
+  .exp > div:nth-child(1) p:nth-child(3) {
+    width: 60%
+  }
+  .exp-group {
+    border: 0;
+  }
+  .exp-group > div {
+    padding: 2em 0;
+    grid-template-columns: 1fr 3fr;
+    gap: 1.5em
+  }
+  .exp-group > div > p {
+    font-size: 3em;
+    height: 100%;
+  }
+  .exp-group > div > div p:nth-child(1) {
+    font-size: 1em;
+  }
+  .exp-group > div > div p:nth-child(2) {
+    font-size: 0.8em;
+  }
+  .exp-group > div > div p:nth-child(3) {
+    font-size: 0.7em;
   }
 }
