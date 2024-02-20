@@ -6,6 +6,7 @@ import WhatIDO from './components/whatido'
 import Featured from './components/featured'
 import Experience from './components/experience'
 import Contact from './components/contact'
+import Footer from './components/footer'
 
 function App() {
 
@@ -29,6 +30,9 @@ function App() {
           <Contact />
         </section>
       </main>
+      <footer>
+          <Footer />
+      </footer>
 
     </div>
   )

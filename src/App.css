@@ -429,8 +429,35 @@ textarea {
   font-family: var(--main-font);
 }
 
-
-
+.footer {
+  margin-top: 4em;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-top: 2px solid var(--text-color);
+  padding: 2em 4em;
+}
+.footer div:nth-child(1) {
+  display: flex;
+  gap: 0.5em;
+  width: 30px;
+}
+.footer div:nth-child(1) p{
+  font-size: 1.8em;
+  font-weight: 900;
+}
+.footer div:nth-child(1) img{
+  width: 40px
+}
+.footer div:nth-child(2) {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.footer div:nth-child(2) p {
+  font-size: 1.4em;
+  color: white;
+  background-color: var(--text-color);
+}
 
 
 @media(max-width: 900px ) and (min-width: 700px) {
