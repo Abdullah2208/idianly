@@ -231,6 +231,7 @@ width: 60%
 .featured-main > div {
   padding: 1em;
   border: 2px solid var(--text-color);
+  background-color: white;
 }
 .featured-main > div >img {
   width: 100%
@@ -350,13 +351,21 @@ width: 60%
     grid-template-columns: 1fr;
     width: 80%;
     margin: 0 auto;
-    margin-top: 10em;
+    margin-top: 7em;
     gap: 2em
+  }
+  .featured-side {
+    gap: 0.5em
   }
   .featured-main {
     display: grid;
     grid-template-columns: 1fr;
     gap: 2em
+  }
+  .featured-side img {
+    rotate: 240deg;
+    justify-self: flex-start;
+    width: 4em
   }
 }
 @media (max-width: 499px) and (min-width: 300px) {
@@ -419,12 +428,21 @@ width: 60%
     grid-template-columns: 1fr;
     width: 80%;
     margin: 0 auto;
-    margin-top: 10em;
+    margin-top: 5em;
     gap: 2em
   }
   .featured-main {
     display: grid;
     grid-template-columns: 1fr;
     gap: 2em
+  }
+  .featured-side {
+    gap: 0.3em
+  }
+  .featured-side img {
+    rotate: 240deg;
+    justify-self: flex-start;
+    margin-left: 3em;
+    width: 4em
   }
 }
