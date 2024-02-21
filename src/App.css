@@ -1,10 +1,13 @@
 @font-face {
   font-family: Handlee;
   src: url('./assets/fonts/Handlee/Handlee-Regular.ttf') format('truetype');
+  font-display: swap;
+  
 }
 @font-face {
   font-family: Inter;
   src: url('./assets/fonts/Inter/Inter-VariableFont_slnt,wght.ttf') format('truetype');
+  font-display: swap;
 }
 
 
