@@ -1,7 +1,7 @@
 import '../App.css'
 import logo from '../assets/images/Vector.svg'
 
-function Header() {
+function Header(props) {
     return (
         <header>
             <div>
@@ -10,9 +10,9 @@ function Header() {
             </div>
             <nav>
                 <ul>
-                    <li>Portfolio</li>
+                    <li onClick={() => props.onClick('portfolioRef')}>Portfolio</li>
                     <div>
-                        <li>Hire me</li>
+                        <li  onClick={() => props.onClick('contactRef')}>Hire me</li>
                     </div>
                 </ul>
             </nav>

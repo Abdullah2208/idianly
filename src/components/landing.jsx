@@ -3,7 +3,7 @@ import '../App.css'
 import zainab from '../assets/images/Group 18.svg'
 import arrow from '../assets/images/arrow.svg'
 
-function Landing() {
+function Landing(props) {
     return(
         <div className='landing'>
             <div className='doodle'>
@@ -17,7 +17,7 @@ function Landing() {
                 </div>
                 <div>
                     <p>I'll develop your website and will develop to land it on the internet using No-code.</p>
-                    <button>Hire me</button>
+                    <button onClick={() => props.onClick('contactRef')}>Hire me</button>
                 </div>
             </div>
         </div>

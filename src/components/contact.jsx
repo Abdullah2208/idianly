@@ -1,10 +1,12 @@
 import '../App.css'
 
+import {forwardRef} from 'react'
+
 import arrow from '../assets/images/arrow.svg'
 
-function Contact() {
+function Contact(props,ref) {
     return (
-        <div className='contact'>
+        <div className='contact' ref={ref}>
             <div>
                 <p>Contact here</p>
                 <img src={arrow} alt='arrow'/>
@@ -39,7 +41,7 @@ function Contact() {
                         id='about'
                         name='about'
                         rows= '5'
-                        cols='70'
+                        cols='40'
                     ></textarea>
                 </div>
                 <div>
@@ -50,4 +52,4 @@ function Contact() {
     )
 }
 
-export default Contact;
+export default forwardRef(Contact);

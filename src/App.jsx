@@ -1,5 +1,7 @@
 import './App.css'
 
+import { useRef } from 'react';
+
 import Header from './components/header'
 import Landing from './components/landing'
 import WhatIDO from './components/whatido'
@@ -9,25 +11,34 @@ import Contact from './components/contact'
 import Footer from './components/footer'
 
 function App() {
+  const contactRef = useRef(null)
+  const portfolioRef = useRef(null)
+
+  const handleClick = (refName) => {
+    const refToScroll = typeof refName === 'string' ?
+    {'contactRef': contactRef, 'portfolioRef': portfolioRef}[refName] : refName;
+
+    refToScroll?.current?.scrollIntoView({ behavior: 'smooth' });
+  }
 
   return (
     <div id='main'>
-      <Header />
+      <Header onClick={handleClick}/>
       <main>
         <section>
-          <Landing />
+          <Landing onClick={handleClick}/>
         </section>
         <section>
           <WhatIDO />
         </section>
         <section>
-          <Featured />
+          <Featured onClick={handleClick} ref={portfolioRef}/>
         </section>
         <section>
           <Experience />
         </section>
         <section>
-          <Contact />
+          <Contact onClick={handleClick} ref={contactRef}/>
         </section>
       </main>
       <footer>

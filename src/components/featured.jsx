@@ -1,4 +1,7 @@
 import '../App.css'
+
+import { forwardRef } from 'react'
+
 import rectOne from '../assets/images/Rectangle 41.png'
 import rectTwo from '../assets/images/Rectangle 42.png'
 import rectThree from '../assets/images/Rectangle 39.png'
@@ -10,7 +13,7 @@ import cursorThree from '../assets/images/Cursor(2).svg'
 import cursorFour from '../assets/images/Cursor(3).svg'
 
 
-function Featured () {
+function Featured (props, ref) {
     const arr = [
         {
             img: rectOne,
@@ -41,7 +44,7 @@ function Featured () {
 
 
     return (
-        <div className='featured'>
+        <div className='featured' ref={ref}>
             <div className='featured-side'>
                 <p>Featured Projects</p>
                 <img src={arrow} alt='arrow'/>
@@ -65,4 +68,4 @@ function Featured () {
     )
 }
 
-export default Featured
+export default forwardRef(Featured)
