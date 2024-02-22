@@ -39,7 +39,7 @@ function Contact() {
                         id='about'
                         name='about'
                         rows= '5'
-                        cols='70'
+                        cols='40'
                     ></textarea>
                 </div>
                 <div>
